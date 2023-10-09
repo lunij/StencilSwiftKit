@@ -12,7 +12,6 @@ typealias NSRegularExpression = RegularExpression
 #endif
 
 // Workaround until Stencil fixes https://github.com/stencilproject/Stencil/issues/22
-@available(*, deprecated, message: "No longer needed with Stencil whitespace control features")
 open class StencilSwiftTemplate: Template {
   public required init(templateString: String, environment: Environment? = nil, name: String? = nil) {
     let templateStringWithMarkedNewlines = templateString
